@@ -1,145 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acme Rockets</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-</head>
-<body>
-    <header class="class-site">
-        
-            <div class="header-inner">
-        
-                <h1 class="brand">🚀Acme Rockets</h1>
-                <nav class="main-nav">
-                    <a href="#rockets">Our Rockets</a>
-                    <a href="#testimonials">Testimonials</a>
-                    <a href="#contacts">Contacts</a>
-                </nav>
-            </div>
-            <div>
-                <i class="bi bi-list"></i>
-            </div>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <p class="nav"><a href="#hero">🚀Acme Rockets</a></p>
+      <ul class="navs">
+        <li><a href="#our-rockets">Our Rockets </a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="bi bi-list"></i>
+      </div>
     </header>
-    <main class="main">
-        <!--Hero-->
-        <section id="home" class="hero">
-            <div class="container hero-inner">
-                <div class="hero-text">
-                    <h1> We Boldly Go <span class="rocket">Where No Rocket </span> Has Gone <br>Before...</h1>
-                    <p>We're building rockets for the next century today - from the Moon to Mars and beyond...  Think Acme Rockets.</p>
-                </div>
-                <div class="hero-image">
-                    <img src="./images/rocketdab.png" alt="Rocket">
-                </div>
-                
-            </div>
-        </section>
-        <!--PRODUCTS / FEATURES-->
-        <section id="rockets" class="features container">
-            <h2 class="section-title">Our Rockets</h2>
-            <div class="grid">
-                <article class="card">
-                    <img src="./images/rocketman.png" alt="">
-                    <h3>Explorer</h3>
-                    <p class="price">$</p>
-                </article>
-                <article class="card">
-                    <img src="./images/rocketride.png" alt="">
-                    <h3>Adventurer</h3>
-                    <p class="price">$$</p>
-                </article>
-                <article class="card">
-                    <img src="./images/rocketlaunch.png" alt="">
-                    <h3>Infinity</h3>
-                    <p class="price">$$$</p>
 
-                </article>
-            </div>
-        </section>
-        <!--TESTIMONIALS-->
-        <section id="testimonials" class="testimonials">
-            
-                
-                <h2 class="section-title">
-                    Testimonials
-                </h2>
-        
+    <main>
+      <section id="hero">
+        <div class="hero-all">
+          <div class="hero-text">
+            <h1>
+              We Boldly Go
+              <span style="color: rgb(41, 41, 182)">Where No Rocket </span>Has
+              Gone Before...
+            </h1>
+            <br />
+            <p>
+              We're building rockets for the next century today. From the moon
+              to Mars, Jupiter and beyond...
+            </p>
+            <br />
+            <p>Think Acme Rockets.</p>
+          </div>
+          <div class="hero-img">
+            <img src="./images/rocketdab.png" alt="rocketdab" />
+          </div>
+        </div>
+      </section>
 
-            <div class="come">
-                <div class="r">
-             
-                    <blockquote class="Go">
-                        <br>
-                        <br>
-                        <p>"Acme has always been there for me. Their Explorer rocket <br>arrived in a wooden crate as expected. Lifelong <br>customer! A++ shopping experience!"</p>
-                        
-                    </blockquote>
-                </div>
-                <br>
-                <div class="name">
-                     <cite class="testifier">- Wile E. Coyote</cite>
-                </div>
-                <br>
+      <section id="our-rockets">
+        <div class="rockets">
+          <h2>Our Rockets</h2>
+          <ul>
+            <li class="rocket-image">
+              <img src="./images/rocketman.png" atr="rocketman" />
+              <p>Explorer</p>
+              <p>$</p>
+            </li>
 
-                <div class="r">
-                    <blockquote class="Go">
-                        <p>"The Acme Adventurer Rocket has thwarted my illudium <br>Q-36 Explosive Space Modulator on several occasions. <br><i>This makes very, very angry!</i> Nevertheless, K-9 annd i <br>have awarded Acme the Martian contract for space <br>exploration rockets based on Acme's quality and sturdy <br>designs."</p>
-                        
-                    </blockquote>
+            <li class="rocket-image">
+              <img src="./images/rocketride.png" alt="rocketride" />
+              <p>Adventurer</p>
+              <p>$$</p>
+            </li>
 
-                </div>
-                <br>
-                <div class="name">
-                    <cite class="testifier">- Marvin the Martian K-9</cite>
-                </div>
-                <br>
-                <div class="r">
-                    <blockquote class="Go">
-                        <br>
-                
-                        <p>"I knew I not only wanted - I needed - Acme's Infinity <br>Rocket for my mission in space. Acme delivered in one <br>day! Nothing says <i>"Take me to your leader"</i> like Acme's <br>Infinity rocket!💯"</p>
-                      
-                    </blockquote>
-                </div>
-                <div class="name">
-                    <cite class="testifier">- Buzz Lightyear</cite>
-                </div>
-          
-            </div>
-        
-        </section>
-       <section id="contacts" class="Contacts">
-        <h2 class="section-title">Contact Us</h2>
-        <form class="contact-form" action="#" method="post" novalidate>
-            
-                <label for="subject">Subject:</label>
-                <input id="subject" name="subject" type="text" placeholder="Your Subject" style="font-size: 20px;">
-                <br>
-            
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" rows="5" placeholder="Your Message" style="font-size: 40px; "></textarea>
-                <br>
-                <br>
-            
-                <button class="btn" type="submit">Submit</button>
+            <li class="rocket-image">
+              <img src="./images/rocketlaunch.png" alt="rocketman" />
+              <p>Infinity</p>
+              <p>$$$</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h2>Testimonials</h2>
+        <figure>
+          <blockquote>
+            <p class="test">
+              Acme has always been there for me. Their Explorer rocket arrived
+              in a wooden crate as expected. Lifelong customer! A++ shopping
+              experience!
+            </p>
+          </blockquote>
+          <figcaption>— Wile E. Coyote, Genius</figcaption>
+        </figure>
+
+        <figure>
+          <blockquote>
+            <p class="test">
+              The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
+              Space Modulator on several occasions.
+              <span class="italic">This makes me very, very angry!</span>
+              Nevertheless, K-9 and I have awarded Acme the Martian contract for
+              space exploration rockets based on Acme's quality and sturdy
+              designs.
+            </p>
+          </blockquote>
+          <figcaption>— Marvin the Martian &amp; K-9</figcaption>
+        </figure>
+
+        <figure>
+          <blockquote>
+            <p class="test">
+              I knew I not only wanted —
+              <span class="italic">I needed</span> — Acme's Infinity Rocket for
+              my mission in space. Acme delivered in one day! Nothing says
+              <q class="italic">Take me to your leader</q> like Acme's Infinity
+              Rocket! 💯
+            </p>
+          </blockquote>
+          <figcaption>— Buzz Lightyear</figcaption>
+        </figure>
+
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form action="">
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your Subject"
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+            placeholder="Your Message"
+          ></textarea>
+
+          <button type="submit">Submit</button>
         </form>
-        </section>
-        <footer class="footer">
-             <address class="company-info"><strong>Acme Rocket-Power Products, Inc.</strong><br>555 Astro Way <br>
-        Fairfield, New Jersey 12345-5555<br>
-    Email: <a href=" Inquires@acemerockets.com"> Inquires@acemerockets.com</a><br>
-            Phone: (555) 555-5555</address>
-                <nav class="footer-nav">
-                    <a href="#rockets">Our Rockets</a>
-                    <a href="#testimonials">Testimonials</a>
-                    <a href="#contacts">Contacts</a>
-                </nav>
-                <p>Copyright &copy; 2022 <br>All right reserved.</p>
-        </footer>
+      </section>
     </main>
-</body>
+    <footer id="footer">
+      
+      <section class="footer-all">
+        <div class="footer-address">
+          <address>
+            <h3>Acme Rocket-Power Products, Inc.</h3>
+            555 Astro Way<br />
+            Fairfield, New Jersey 12345-5555<br />
+            Email:
+            <a href="mailto:inquiries@acemerockets.com"
+              >inquiries@acemerockets.com</a
+            ><br />
+            Phone:
+            <a href="tel:+15555555555">(555) 555-5555</a>
+          </address>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#rockets">Our Rockets</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+
+        <div class="footer-right">
+          <p>Copyright © <span id="year">2022</span></p>
+          <p>All Rights Reserved</p>
+        </div>
+      </section>
+
+    </footer>
+
+    <script>
+      const menuButton = document.getElementsByClassName("menu-btn")[0];
+      const listToggle = document.getElementsByClassName("navs")[0];
+      function menuToggle() {
+        if (listToggle.style.display === "none") {
+          listToggle.style.display = "block";
+          menuButton.innerHTML = '<i class="bi bi-x"></i>';
+        } else {
+          listToggle.style.display = "none";
+          menuButton.innerHTML = '<i class="bi bi-list"></i>';
+        }
+      }
+      menuButton.addEventListener("click", menuToggle);
+    </script>
+  </body>
 </html>

@@ -1,222 +1,285 @@
-*{
-    box-sizing: border-box; margin: 0; padding: 0;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(15, 101, 104);
-    padding: 10px 20px;
-    height: 10vh;
-    width: 100vw;
-    position: fixed;
+body {
+  width: screen;
+  height: 100vh;
+  background-color: #fffeff;
 }
-
-
-.header-inner{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 130px;}
-
-.main-nav a{
-    color: white;
-    text-decoration: none;
-    justify-content: space-between;
-    font-size: 25px;
-    align-items: center;
-    margin-right: 80px;
-    margin-left: 70px;
-    
-    
-
-
+header {
+  width: 100vw;
+  height: 70px;
+  background-color: #0d9488;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
-.brand{
-    color: white;
-    margin-left: 125px;
-    
-}
-main{
-    background-color:rgb(248, 250, 252);
-}
-.hero-inner{
-    display: flex;
-    align-items: center;
-    margin-right: 350px;
-}
-.hero-text{
-    font-size: 25px;
-    align-items: center;
-    margin-left: 350px;
-    margin-top: 100px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.rocket{color: rgb(11, 18, 148);}
-.hero-image{
-    margin-top: 100px;
-    margin-left: 50px;
+.nav{
+  font-size: 35px;
 }
 
-.section-title {
-    margin-bottom: 18px;
-    align-items: center;
-    display: flex;
-    font-size: 45px;
-    justify-content: center;
+header a {
+  color: #fff;
+  text-decoration: none;
 }
-.grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
-    gap: 1px;
-    
-
+header ul {
+  display: flex;
+  font-size: larger;
+  gap: 50px;
+  list-style-type: none;
+  justify-content: right;
+  padding: 15px;
 }
-#rockets{
-    height: 150vh;
-    padding: 290px;
-}
-.card{
-    background: rgb(255, 255, 255);
-    padding: 40px;
-    border-radius: 30px;
-    box-shadow: 0 6px 18px rgba(1, 4, 8, 0.926);
-    text-align: center;
-    margin: 20px;
-    height: 40vh;
-}
-.card img{
-    width: 40%;
-    margin-bottom: 5px;
-}
-.price{
-    font-size: xx-large;
-}
-.card h3{
-    font-size: xx-large;
-}
-.container{
-    justify-content: center;
-    align-items: center;
-}
-.come{
-    color: black;
-    justify-content: space-between;
-    gap: 80px;
-}
-.r{
-    width: 300px;
-    color: black;
-    border: 1px solid;
-    width: 700px;;
-    border-radius: 20px;
-     background-color: rgb(15, 101, 104);
-     height: 300px;
-
-}
-.Go{
-    font-size: 28px;
-    color: white;
-    margin-top: 50px;
-    align-items: center;
-    text-align: center;
-
-}
-    
-   
-.name{
-    align-items: center;
-    margin-left: 400px;
-}
-.testimonials{
-    /* margin-left : 400px; */
-    /* margin-left: px; */
-    width: screen;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: black;
+main {
+  width: screen;
 }
 
-.testifier{background-color: white; font-size: x-large; text-align: left;}
-.Contacts{
-    padding: 270px;
-
+#hero {
+  margin-top: 85px;
+}
+.hero-all {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.hero-text {
+  width: 30vw;  
+}
+.hero-text h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 1000px;
+  text-align: left;
+}
+.hero-text p {
+  font-size: 25px;
+}
+#our-rockets {
+  margin-top: 100px;
+  width: inherit;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: 400px;
+  text-align: center;
+}
+.rockets ul {
+  margin-top: 30px;
+  display: flex;
+  padding: 3% 10% ;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.rocket-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 250px;
+  border: 1px solid #0f172a;
+  border-radius: 1.5rem;
+  background-color: #ffffff;
+  padding: 35px; 
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /
+}
+.rocket-image img {
+  width: 142px;
+  height: 112px;
+  }
+.rocket-image:hover {
+  background-color: #0d9488;
+  transform: rotateY(360deg);
+  transition: 3s;
+}
+.rocket-image p{
+  font-size: 30px;
+  text-align: center;
+}
+#testimonials {
+  width: screen;
+  margin:60px 200px;
+}
+#testimonials figure {
+  width: 65vw;
+  margin-top: 40px;
+}
+#testimonials blockquote {
+  position: relative;
+  background-color: #0d9488;
+  color: white;
+  border-radius: 1.5rem;
+  padding: 3rem 2rem 3rem 3.5rem;
 }
 
-.form-row{
-    margin-bottom: 12px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    height: auto;
-    width: 500px;
+.test {
+  margin-top: 0.5rem;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  line-height: 1.15;
+}
+.italic {
+  font-style: italic;
+}
 
+#testimonials figcaption {
+  text-align: right;
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #64748b;
 }
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    font-size: xx-large;
+#contact {
+  width: screen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
 
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* max-width: 64rem;  */
+  width: 800px;
+  margin: 0 auto;
+  font-size: 1.25rem; 
+}
 
+#contact input,
+#contact textarea {
+  border: 1px solid #0f172a;
+  border-radius: 0.75rem; 
+  padding: 0.75rem;
+  color: #000;
+  font-size: inherit;
+}
 
+#contact button {
+  width: 150px; 
+  border: 1px solid #0f172a;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  background-color: #0f766e; 
+  color: #ffffff;
+  font-size: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+#contact button:hover {
+  background-color: #0d9488; 
 }
-#subject{
-    width: 750px;
-    height: 50px;
-    border-radius: 10px;
-}
-#message{
-    width: 750px;
-    height: 350px;
-    border-radius: 10px;
-}
-.btn{
-    width: 170px;
-    height: 60px;
-    border-radius: 10px;
-    align-items: self-end;
-    background-color:  rgb(15, 101, 104);
-    color: #fff;
-}
-.footer{
-    background-color: rgb(15, 101, 104);
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-    text-decoration: none;
-    font-size: x-large;
-    color: white;
-    
-    
 
+#contact button:active {
+  background-color: #14b8a6; 
 }
-.footer-nav{
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: #fff;
-   
+
+#footer {
+  width: screen;
+  background-color: #0f766e;
+  color: white;
+  /* padding: 1rem 7rem; */
 }
-.bi{
+
+.footer-all{
+  font-size: 20px;
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-address a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav { 
+ display: flex;
+ flex-direction: column;
+} 
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+}
+.menu-btn{
+  display: none;
+}
+@media screen and (max-width:768px) {
+#contact form{
+  width: 600px;
+}  
+}
+@media screen and (max-width:426px) {
+  header ul{
+    display: none;
+  }
+  .menu-btn{
+    display: block;
     font-size: 40px;
     color: #fff;
-
+  }
+  .hero-all{
+    flex-direction: column-reverse;
+    width: 90vw;
+  }
+  .hero-text{
+    width: 100%;
+    text-align: center;
+  }
+  .hero-text h1{
+    font-size: 30px;
+    text-align: center;
+  }
+  .hero-img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-img img{
+    width: 200px;
+  }
+  .rockets ul{
+    flex-direction: column;
+    gap: 20px;
+  }
+  #testimonials{
+    margin: 60px 30px;
+  }
+  #contact form{
+    width: 300px;
+  }
+  .footer-nav{
+    display: none;
+  }
+  .footer-all{
+    flex-direction: column;
+  }
+  .footer-right{
+    width: 50vw;
+    margin-left: 50%;
+  }
+}
+@media screen and (max-width:320px) {
+    .test{
+        font-size: 20px;
+    }
+    
 }
 
-
-
-
-
-
- 
-
+/* ================================
+   💻 Screen up to 425px (Mobile L)
+   ================================ */
